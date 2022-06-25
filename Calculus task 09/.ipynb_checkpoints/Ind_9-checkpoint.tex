@@ -1,0 +1,791 @@
+ \documentclass[11pt]{report}
+
+\usepackage[T2A]{fontenc}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[russian]{babel}
+
+\usepackage{amsmath,amssymb}
+
+\usepackage{graphicx}
+
+\usepackage{caption}
+
+\graphicspath{ {d:/HSE/Python2020/Calc/Ind8pict/} }
+
+\oddsidemargin=-19mm
+
+\topmargin=-30mm
+
+\textheight 26cm 
+
+\hsize 18cm
+
+\textwidth 20cm
+
+\begin{document}
+
+\pagestyle{empty}
+
+{\bf Индивидуальное задание.}
+
+ 
+Провести замену переменных в определенном интеграле, представить результат в виде двух уравнений, по образцу:
+\begin{align*}
+\int_1^4 \frac{dx}{\sqrt{x}\left(\sqrt{x}+1\right)} = \int_1^2 \frac{2\,dy}{y + 1}\
+\int_1^2 \frac{2\,dy}{y + 1} = 2(\ln 3 - \ln 2)
+\end{align*}
+(с точностью до перестановки слагаемых и сомножителей)
+
+Вариант 1
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(3 \tan^{2}{\left(x \right)} + 3\right) \tan^{2}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 2
+
+$$\int\limits_{2}^{3} e^{\sin{\left(x \right)}} \cos{\left(x \right)}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 3
+
+$$\int\limits_{\log{\left(\frac{\sqrt{3}}{3} \right)}}^{\log{\left(\sqrt{3} \right)}} \frac{e^{x}}{e^{2 x} + 1}\, dx$$
+замена $y = e^{x}$
+
+Вариант 4
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \cos{\left(x^{7} \right)}\, dx$$
+замена $y = x^{7}$
+
+Вариант 5
+
+$$\int\limits_{1}^{4} \left(- e^{\cos{\left(x \right)}} \sin{\left(x \right)}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 6
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} \left(- 7 x^{6} \sin{\left(x^{7} \right)}\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 7
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(7 \tan^{2}{\left(x \right)} + 7\right) \tan^{6}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 8
+
+$$\int\limits_{\log{\left(\frac{\pi}{4} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} \left(\tan^{2}{\left(e^{x} \right)} + 1\right) e^{x}\, dx$$
+замена $y = e^{x}$
+
+Вариант 9
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \cos{\left(x^{5} \right)}\, dx$$
+замена $y = x^{5}$
+
+Вариант 10
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \left(\tan^{2}{\left(x^{7} \right)} + 1\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 11
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{9 \operatorname{atan}^{8}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 12
+
+$$\int\limits_{0}^{\tan{\left(1 \right)}} \frac{e^{\operatorname{atan}{\left(x \right)}}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 13
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \left(\tan^{2}{\left(x^{3} \right)} + 1\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 14
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} e^{x} \cos{\left(e^{x} \right)}\, dx$$
+замена $y = e^{x}$
+
+Вариант 15
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} \left(- 9 x^{8} \sin{\left(x^{9} \right)}\right)\, dx$$
+замена $y = x^{9}$
+
+Вариант 16
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} \left(- 3 x^{2} \sin{\left(x^{3} \right)}\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 17
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \left(\tan^{2}{\left(x^{5} \right)} + 1\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 18
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} 9 x^{8} \cos{\left(x^{9} \right)}\, dx$$
+замена $y = x^{9}$
+
+Вариант 19
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{4}} \left(- \frac{\sin{\left(x \right)}}{\cos{\left(x \right)}}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 20
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{5 \operatorname{atan}^{4}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 21
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{3}} \frac{\cos{\left(x \right)}}{\sin{\left(x \right)}}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 22
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{4} \right)}} \left(- e^{x} \sin{\left(e^{x} \right)}\right)\, dx$$
+замена $y = e^{x}$
+
+Вариант 23
+
+$$\int\limits_{\frac{\pi}{4}}^{\frac{\pi}{3}} \left(\tan^{2}{\left(x \right)} + 1\right) e^{\tan{\left(x \right)}}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 24
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} \left(- 5 x^{4} \sin{\left(x^{5} \right)}\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 25
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \cos{\left(x^{3} \right)}\, dx$$
+замена $y = x^{3}$
+
+Вариант 26
+
+$$\int\limits_{0}^{\tan{\left(1 \right)}} \frac{e^{\operatorname{atan}{\left(x \right)}}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 27
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} e^{x} \cos{\left(e^{x} \right)}\, dx$$
+замена $y = e^{x}$
+
+Вариант 28
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \left(\tan^{2}{\left(x^{7} \right)} + 1\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 29
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} \left(- 5 x^{4} \sin{\left(x^{5} \right)}\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 30
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{5 \operatorname{atan}^{4}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 31
+
+$$\int\limits_{2}^{3} e^{\sin{\left(x \right)}} \cos{\left(x \right)}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 32
+
+$$\int\limits_{\log{\left(\frac{\sqrt{3}}{3} \right)}}^{\log{\left(\sqrt{3} \right)}} \frac{e^{x}}{e^{2 x} + 1}\, dx$$
+замена $y = e^{x}$
+
+Вариант 33
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(7 \tan^{2}{\left(x \right)} + 7\right) \tan^{6}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 34
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{9 \operatorname{atan}^{8}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 35
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(3 \tan^{2}{\left(x \right)} + 3\right) \tan^{2}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 36
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} \left(- 7 x^{6} \sin{\left(x^{7} \right)}\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 37
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} \left(- 3 x^{2} \sin{\left(x^{3} \right)}\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 38
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{4}} \left(- \frac{\sin{\left(x \right)}}{\cos{\left(x \right)}}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 39
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} 9 x^{8} \cos{\left(x^{9} \right)}\, dx$$
+замена $y = x^{9}$
+
+Вариант 40
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \left(\tan^{2}{\left(x^{5} \right)} + 1\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 41
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \cos{\left(x^{3} \right)}\, dx$$
+замена $y = x^{3}$
+
+Вариант 42
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} \left(- 9 x^{8} \sin{\left(x^{9} \right)}\right)\, dx$$
+замена $y = x^{9}$
+
+Вариант 43
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{4} \right)}} \left(- e^{x} \sin{\left(e^{x} \right)}\right)\, dx$$
+замена $y = e^{x}$
+
+Вариант 44
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \cos{\left(x^{5} \right)}\, dx$$
+замена $y = x^{5}$
+
+Вариант 45
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \cos{\left(x^{7} \right)}\, dx$$
+замена $y = x^{7}$
+
+Вариант 46
+
+$$\int\limits_{\log{\left(\frac{\pi}{4} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} \left(\tan^{2}{\left(e^{x} \right)} + 1\right) e^{x}\, dx$$
+замена $y = e^{x}$
+
+Вариант 47
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{3}} \frac{\cos{\left(x \right)}}{\sin{\left(x \right)}}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 48
+
+$$\int\limits_{1}^{4} \left(- e^{\cos{\left(x \right)}} \sin{\left(x \right)}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 49
+
+$$\int\limits_{\frac{\pi}{4}}^{\frac{\pi}{3}} \left(\tan^{2}{\left(x \right)} + 1\right) e^{\tan{\left(x \right)}}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 50
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \left(\tan^{2}{\left(x^{3} \right)} + 1\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 51
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \cos{\left(x^{7} \right)}\, dx$$
+замена $y = x^{7}$
+
+Вариант 52
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} \left(- 5 x^{4} \sin{\left(x^{5} \right)}\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 53
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{9 \operatorname{atan}^{8}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 54
+
+$$\int\limits_{\log{\left(\frac{\sqrt{3}}{3} \right)}}^{\log{\left(\sqrt{3} \right)}} \frac{e^{x}}{e^{2 x} + 1}\, dx$$
+замена $y = e^{x}$
+
+Вариант 55
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \left(\tan^{2}{\left(x^{3} \right)} + 1\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 56
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{4} \right)}} \left(- e^{x} \sin{\left(e^{x} \right)}\right)\, dx$$
+замена $y = e^{x}$
+
+Вариант 57
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} \left(- 9 x^{8} \sin{\left(x^{9} \right)}\right)\, dx$$
+замена $y = x^{9}$
+
+Вариант 58
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} e^{x} \cos{\left(e^{x} \right)}\, dx$$
+замена $y = e^{x}$
+
+Вариант 59
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} 9 x^{8} \cos{\left(x^{9} \right)}\, dx$$
+замена $y = x^{9}$
+
+Вариант 60
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{5 \operatorname{atan}^{4}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 61
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} \left(- 3 x^{2} \sin{\left(x^{3} \right)}\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 62
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} \left(- 7 x^{6} \sin{\left(x^{7} \right)}\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 63
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(7 \tan^{2}{\left(x \right)} + 7\right) \tan^{6}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 64
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \cos{\left(x^{3} \right)}\, dx$$
+замена $y = x^{3}$
+
+Вариант 65
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(3 \tan^{2}{\left(x \right)} + 3\right) \tan^{2}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 66
+
+$$\int\limits_{\frac{\pi}{4}}^{\frac{\pi}{3}} \left(\tan^{2}{\left(x \right)} + 1\right) e^{\tan{\left(x \right)}}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 67
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \cos{\left(x^{5} \right)}\, dx$$
+замена $y = x^{5}$
+
+Вариант 68
+
+$$\int\limits_{1}^{4} \left(- e^{\cos{\left(x \right)}} \sin{\left(x \right)}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 69
+
+$$\int\limits_{2}^{3} e^{\sin{\left(x \right)}} \cos{\left(x \right)}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 70
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \left(\tan^{2}{\left(x^{7} \right)} + 1\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 71
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{4}} \left(- \frac{\sin{\left(x \right)}}{\cos{\left(x \right)}}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 72
+
+$$\int\limits_{\log{\left(\frac{\pi}{4} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} \left(\tan^{2}{\left(e^{x} \right)} + 1\right) e^{x}\, dx$$
+замена $y = e^{x}$
+
+Вариант 73
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{3}} \frac{\cos{\left(x \right)}}{\sin{\left(x \right)}}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 74
+
+$$\int\limits_{0}^{\tan{\left(1 \right)}} \frac{e^{\operatorname{atan}{\left(x \right)}}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 75
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \left(\tan^{2}{\left(x^{5} \right)} + 1\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 76
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} 9 x^{8} \cos{\left(x^{9} \right)}\, dx$$
+замена $y = x^{9}$
+
+Вариант 77
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \left(\tan^{2}{\left(x^{7} \right)} + 1\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 78
+
+$$\int\limits_{\log{\left(\frac{\pi}{4} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} \left(\tan^{2}{\left(e^{x} \right)} + 1\right) e^{x}\, dx$$
+замена $y = e^{x}$
+
+Вариант 79
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{4} \right)}} \left(- e^{x} \sin{\left(e^{x} \right)}\right)\, dx$$
+замена $y = e^{x}$
+
+Вариант 80
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \cos{\left(x^{3} \right)}\, dx$$
+замена $y = x^{3}$
+
+Вариант 81
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \cos{\left(x^{7} \right)}\, dx$$
+замена $y = x^{7}$
+
+Вариант 82
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} \left(- 5 x^{4} \sin{\left(x^{5} \right)}\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 83
+
+$$\int\limits_{1}^{4} \left(- e^{\cos{\left(x \right)}} \sin{\left(x \right)}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 84
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{9 \operatorname{atan}^{8}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 85
+
+$$\int\limits_{2}^{3} e^{\sin{\left(x \right)}} \cos{\left(x \right)}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 86
+
+$$\int\limits_{0}^{\tan{\left(1 \right)}} \frac{e^{\operatorname{atan}{\left(x \right)}}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 87
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{4}} \left(- \frac{\sin{\left(x \right)}}{\cos{\left(x \right)}}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 88
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{3}} \frac{\cos{\left(x \right)}}{\sin{\left(x \right)}}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 89
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{5 \operatorname{atan}^{4}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 90
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(7 \tan^{2}{\left(x \right)} + 7\right) \tan^{6}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 91
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \cos{\left(x^{5} \right)}\, dx$$
+замена $y = x^{5}$
+
+Вариант 92
+
+$$\int\limits_{\log{\left(\frac{\sqrt{3}}{3} \right)}}^{\log{\left(\sqrt{3} \right)}} \frac{e^{x}}{e^{2 x} + 1}\, dx$$
+замена $y = e^{x}$
+
+Вариант 93
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \left(\tan^{2}{\left(x^{5} \right)} + 1\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 94
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} \left(- 7 x^{6} \sin{\left(x^{7} \right)}\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 95
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(3 \tan^{2}{\left(x \right)} + 3\right) \tan^{2}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 96
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} e^{x} \cos{\left(e^{x} \right)}\, dx$$
+замена $y = e^{x}$
+
+Вариант 97
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} \left(- 9 x^{8} \sin{\left(x^{9} \right)}\right)\, dx$$
+замена $y = x^{9}$
+
+Вариант 98
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \left(\tan^{2}{\left(x^{3} \right)} + 1\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 99
+
+$$\int\limits_{\frac{\pi}{4}}^{\frac{\pi}{3}} \left(\tan^{2}{\left(x \right)} + 1\right) e^{\tan{\left(x \right)}}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 100
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} \left(- 3 x^{2} \sin{\left(x^{3} \right)}\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 101
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \cos{\left(x^{7} \right)}\, dx$$
+замена $y = x^{7}$
+
+Вариант 102
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{4}} \left(- \frac{\sin{\left(x \right)}}{\cos{\left(x \right)}}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 103
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{9 \operatorname{atan}^{8}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 104
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \cos{\left(x^{3} \right)}\, dx$$
+замена $y = x^{3}$
+
+Вариант 105
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(7 \tan^{2}{\left(x \right)} + 7\right) \tan^{6}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 106
+
+$$\int\limits_{1}^{4} \left(- e^{\cos{\left(x \right)}} \sin{\left(x \right)}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 107
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} \left(- 3 x^{2} \sin{\left(x^{3} \right)}\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 108
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} 9 x^{8} \cos{\left(x^{9} \right)}\, dx$$
+замена $y = x^{9}$
+
+Вариант 109
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} \left(- 7 x^{6} \sin{\left(x^{7} \right)}\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 110
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} e^{x} \cos{\left(e^{x} \right)}\, dx$$
+замена $y = e^{x}$
+
+Вариант 111
+
+$$\int\limits_{0}^{\tan{\left(1 \right)}} \frac{e^{\operatorname{atan}{\left(x \right)}}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 112
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} \left(- 5 x^{4} \sin{\left(x^{5} \right)}\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 113
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} \left(- 9 x^{8} \sin{\left(x^{9} \right)}\right)\, dx$$
+замена $y = x^{9}$
+
+Вариант 114
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \left(\tan^{2}{\left(x^{7} \right)} + 1\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 115
+
+$$\int\limits_{\frac{\pi}{4}}^{\frac{\pi}{3}} \left(\tan^{2}{\left(x \right)} + 1\right) e^{\tan{\left(x \right)}}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 116
+
+$$\int\limits_{2}^{3} e^{\sin{\left(x \right)}} \cos{\left(x \right)}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 117
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{5 \operatorname{atan}^{4}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 118
+
+$$\int\limits_{\log{\left(\frac{\pi}{4} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} \left(\tan^{2}{\left(e^{x} \right)} + 1\right) e^{x}\, dx$$
+замена $y = e^{x}$
+
+Вариант 119
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{4} \right)}} \left(- e^{x} \sin{\left(e^{x} \right)}\right)\, dx$$
+замена $y = e^{x}$
+
+Вариант 120
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \left(\tan^{2}{\left(x^{3} \right)} + 1\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 121
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \left(\tan^{2}{\left(x^{5} \right)} + 1\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 122
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(3 \tan^{2}{\left(x \right)} + 3\right) \tan^{2}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 123
+
+$$\int\limits_{\log{\left(\frac{\sqrt{3}}{3} \right)}}^{\log{\left(\sqrt{3} \right)}} \frac{e^{x}}{e^{2 x} + 1}\, dx$$
+замена $y = e^{x}$
+
+Вариант 124
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \cos{\left(x^{5} \right)}\, dx$$
+замена $y = x^{5}$
+
+Вариант 125
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{3}} \frac{\cos{\left(x \right)}}{\sin{\left(x \right)}}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 126
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} \left(- 9 x^{8} \sin{\left(x^{9} \right)}\right)\, dx$$
+замена $y = x^{9}$
+
+Вариант 127
+
+$$\int\limits_{\log{\left(\frac{\pi}{4} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} \left(\tan^{2}{\left(e^{x} \right)} + 1\right) e^{x}\, dx$$
+замена $y = e^{x}$
+
+Вариант 128
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} \left(- 3 x^{2} \sin{\left(x^{3} \right)}\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 129
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \left(\tan^{2}{\left(x^{3} \right)} + 1\right)\, dx$$
+замена $y = x^{3}$
+
+Вариант 130
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(7 \tan^{2}{\left(x \right)} + 7\right) \tan^{6}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 131
+
+$$\int\limits_{\frac{6^{\frac{2}{3}} \sqrt[3]{\pi}}{6}}^{\frac{3^{\frac{2}{3}} \sqrt[3]{\pi}}{3}} 3 x^{2} \cos{\left(x^{3} \right)}\, dx$$
+замена $y = x^{3}$
+
+Вариант 132
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{3} \right)}} e^{x} \cos{\left(e^{x} \right)}\, dx$$
+замена $y = e^{x}$
+
+Вариант 133
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \cos{\left(x^{5} \right)}\, dx$$
+замена $y = x^{5}$
+
+Вариант 134
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{4}} \left(- \frac{\sin{\left(x \right)}}{\cos{\left(x \right)}}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 135
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{5 \operatorname{atan}^{4}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 136
+
+$$\int\limits_{\log{\left(\frac{\pi}{6} \right)}}^{\log{\left(\frac{\pi}{4} \right)}} \left(- e^{x} \sin{\left(e^{x} \right)}\right)\, dx$$
+замена $y = e^{x}$
+
+Вариант 137
+
+$$\int\limits_{0}^{\sqrt{3}} \frac{9 \operatorname{atan}^{8}{\left(x \right)}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 138
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} 5 x^{4} \left(\tan^{2}{\left(x^{5} \right)} + 1\right)\, dx$$
+замена $y = x^{5}$
+
+Вариант 139
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \left(\tan^{2}{\left(x^{7} \right)} + 1\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 140
+
+$$\int\limits_{\frac{\pi}{6}}^{\frac{\pi}{3}} \frac{\cos{\left(x \right)}}{\sin{\left(x \right)}}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 141
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} 7 x^{6} \cos{\left(x^{7} \right)}\, dx$$
+замена $y = x^{7}$
+
+Вариант 142
+
+$$\int\limits_{0}^{\frac{\pi}{3}} \left(3 \tan^{2}{\left(x \right)} + 3\right) \tan^{2}{\left(x \right)}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 143
+
+$$\int\limits_{1}^{4} \left(- e^{\cos{\left(x \right)}} \sin{\left(x \right)}\right)\, dx$$
+замена $y = \cos{\left(x \right)}$
+
+Вариант 144
+
+$$\int\limits_{\frac{3^{\frac{8}{9}} \sqrt[9]{\pi}}{3}}^{\frac{2^{\frac{8}{9}} \sqrt[9]{\pi}}{2}} 9 x^{8} \cos{\left(x^{9} \right)}\, dx$$
+замена $y = x^{9}$
+
+Вариант 145
+
+$$\int\limits_{2}^{3} e^{\sin{\left(x \right)}} \cos{\left(x \right)}\, dx$$
+замена $y = \sin{\left(x \right)}$
+
+Вариант 146
+
+$$\int\limits_{\frac{\pi}{4}}^{\frac{\pi}{3}} \left(\tan^{2}{\left(x \right)} + 1\right) e^{\tan{\left(x \right)}}\, dx$$
+замена $y = \tan{\left(x \right)}$
+
+Вариант 147
+
+$$\int\limits_{\frac{6^{\frac{6}{7}} \sqrt[7]{\pi}}{6}}^{\frac{2^{\frac{5}{7}} \sqrt[7]{\pi}}{2}} \left(- 7 x^{6} \sin{\left(x^{7} \right)}\right)\, dx$$
+замена $y = x^{7}$
+
+Вариант 148
+
+$$\int\limits_{\log{\left(\frac{\sqrt{3}}{3} \right)}}^{\log{\left(\sqrt{3} \right)}} \frac{e^{x}}{e^{2 x} + 1}\, dx$$
+замена $y = e^{x}$
+
+Вариант 149
+
+$$\int\limits_{0}^{\tan{\left(1 \right)}} \frac{e^{\operatorname{atan}{\left(x \right)}}}{x^{2} + 1}\, dx$$
+замена $y = \operatorname{atan}{\left(x \right)}$
+
+Вариант 150
+
+$$\int\limits_{0}^{\frac{3^{\frac{4}{5}} \sqrt[5]{\pi}}{3}} \left(- 5 x^{4} \sin{\left(x^{5} \right)}\right)\, dx$$
+замена $y = x^{5}$
+
+\end{document}

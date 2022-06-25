@@ -1,0 +1,633 @@
+ \documentclass[11pt]{report}
+
+\usepackage[T2A]{fontenc}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[russian]{babel}
+
+\usepackage{amsmath,amssymb}
+
+\usepackage{graphicx}
+
+\graphicspath{ {d:/HSE/OR/CW/CW5pict/} }
+
+\begin{document}
+
+\pagestyle{empty}
+
+{\bf Индивидуальное задание.}
+
+
+Ввести безымянную систему координат XYZ, задать в ней векторы $v_1$ и $v_2$. 
+Построить новую систему координат XYZ1 с именем Name поворотом  XYZ на $\alpha$ против часовой стрелки относительно оси, 
+определяемой вектором $ax_{new}$, выразить векторы $v_1$ и $v_2$ в новой системе координат. 
+
+
+Найти скалярное и векторное произведение векторов в новой и старой системе координат. 
+
+
+Выразить вектор, равный векторному произведению $v_1$ и $v_2$ в старой системе координат через новую систему координат, 
+сравнить с векторным произведением $v_1$ и $v_2$, выраженным в новой системе координат.
+
+Вариант N 1
+
+$v_1 = (-2)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, Name = 1, угол поворота $7 \pi / 4$, ось $(2)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}}$
+
+Вариант N 2
+
+$v_1 = (7)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (9)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = 2, угол поворота $- \pi / 3$, ось $(-5)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}}$
+
+Вариант N 3
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = 3, угол поворота $- 2 \pi / 3$, ось $(4)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}}$
+
+Вариант N 4
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (8)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, Name = 4, угол поворота $- 2 \pi / 3$, ось $(8)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}}$
+
+Вариант N 5
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = 5, угол поворота $- \pi / 3$, ось $(6)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}}$
+
+Вариант N 6
+
+$v_1 = (-8)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, $v_2 = (-5)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, Name = 6, угол поворота $\pi / 3$, ось $(2)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}}$
+
+Вариант N 7
+
+$v_1 = (-3)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (-7)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = 7, угол поворота $- 7 \pi / 4$, ось $(-8)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 8
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, $v_2 = (-4)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, Name = 8, угол поворота $\pi / 2$, ось $(-7)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}}$
+
+Вариант N 9
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, Name = 9, угол поворота $- 3 \pi / 4$, ось $(-8)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 10
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (9)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = a, угол поворота $7 \pi / 8$, ось $(4)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 11
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, $v_2 = (-2)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = b, угол поворота $- 3 \pi / 2$, ось $(-3)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 12
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = c, угол поворота $- \pi / 3$, ось $(-4)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}}$
+
+Вариант N 13
+
+$v_1 = (-2)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, $v_2 = (9)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = d, угол поворота $- 7 \pi / 4$, ось $(8)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}}$
+
+Вариант N 14
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, Name = e, угол поворота $\pi / 3$, ось $(6)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 15
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, Name = f, угол поворота $- 3 \pi / 8$, ось $(5)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}}$
+
+Вариант N 16
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (9)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, Name = g, угол поворота $\pi / 3$, ось $(4)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}}$
+
+Вариант N 17
+
+$v_1 = (-9)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, $v_2 = (8)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = h, угол поворота $- \pi / 3$, ось $(-3)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 18
+
+$v_1 = (-8)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, Name = m, угол поворота $- \pi / 3$, ось $(5)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 19
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = n, угол поворота $5 \pi / 3$, ось $(7)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 20
+
+$v_1 = (-2)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, $v_2 = (-6)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, Name = o, угол поворота $3 \pi / 2$, ось $(-2)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 21
+
+$v_1 = (-2)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, $v_2 = (-2)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = p, угол поворота $\pi / 2$, ось $(-8)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 22
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, $v_2 = (9)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, Name = q, угол поворота $- \pi / 2$, ось $(2)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 23
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, Name = r, угол поворота $- 2 \pi / 3$, ось $(-2)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 24
+
+$v_1 = (-2)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, $v_2 = (-3)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, Name = s, угол поворота $- \pi / 2$, ось $(7)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 25
+
+$v_1 = (-8)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, $v_2 = (-9)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = t, угол поворота $- 4 \pi / 3$, ось $(-2)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 26
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, $v_2 = (-5)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, Name = u, угол поворота $3 \pi / 2$, ось $(-2)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}}$
+
+Вариант N 27
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, $v_2 = (-2)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = v, угол поворота $7 \pi / 6$, ось $(2)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 28
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, $v_2 = (8)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, Name = w, угол поворота $\pi / 3$, ось $(4)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 29
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, $v_2 = (3)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, Name = x, угол поворота $\pi / 8$, ось $(-6)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}}$
+
+Вариант N 30
+
+$v_1 = (9)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, $v_2 = (-4)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, Name = 0, угол поворота $3 \pi / 4$, ось $(2)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}}$
+
+Вариант N 31
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (-4)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, Name = 1, угол поворота $3 \pi / 2$, ось $(8)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 32
+
+$v_1 = (2)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, $v_2 = (-2)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = 2, угол поворота $- \pi / 3$, ось $(-3)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}}$
+
+Вариант N 33
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (-9)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = 3, угол поворота $\pi / 3$, ось $(-4)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 34
+
+$v_1 = (-3)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (-7)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, Name = 4, угол поворота $\pi / 3$, ось $(-3)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}}$
+
+Вариант N 35
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, $v_2 = (-3)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = 5, угол поворота $4 \pi / 3$, ось $(-2)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 36
+
+$v_1 = (4)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, $v_2 = (-6)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, Name = 6, угол поворота $\pi / 3$, ось $(-3)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}}$
+
+Вариант N 37
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = 7, угол поворота $\pi / 2$, ось $(5)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 38
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, Name = 8, угол поворота $- 7 \pi / 3$, ось $(-9)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}}$
+
+Вариант N 39
+
+$v_1 = (-8)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = 9, угол поворота $- \pi / 3$, ось $(9)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 40
+
+$v_1 = (-2)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, $v_2 = (6)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = a, угол поворота $- \pi / 3$, ось $(-5)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 41
+
+$v_1 = (-8)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (3)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, Name = b, угол поворота $- 3 \pi / 4$, ось $(4)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}}$
+
+Вариант N 42
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, $v_2 = (-6)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, Name = c, угол поворота $3 \pi / 2$, ось $(-4)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}}$
+
+Вариант N 43
+
+$v_1 = (7)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, $v_2 = (-3)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, Name = d, угол поворота $- 7 \pi / 6$, ось $(2)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}}$
+
+Вариант N 44
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, $v_2 = (-5)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, Name = e, угол поворота $- \pi / 3$, ось $(-7)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}}$
+
+Вариант N 45
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, $v_2 = (-4)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = f, угол поворота $3 \pi / 2$, ось $(7)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}}$
+
+Вариант N 46
+
+$v_1 = (-3)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, Name = g, угол поворота $5 \pi / 8$, ось $(-5)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 47
+
+$v_1 = (-7)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, $v_2 = (-3)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, Name = h, угол поворота $- 7 \pi / 4$, ось $(6)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}}$
+
+Вариант N 48
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, $v_2 = (-7)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = m, угол поворота $- 5 \pi / 3$, ось $(-6)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 49
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, $v_2 = (-7)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, Name = n, угол поворота $- \pi / 3$, ось $(3)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 50
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, Name = o, угол поворота $- 3 \pi / 4$, ось $(4)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 51
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (-4)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, Name = p, угол поворота $\pi / 3$, ось $(3)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 52
+
+$v_1 = (4)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = q, угол поворота $- \pi / 3$, ось $(-8)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 53
+
+$v_1 = (4)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (-2)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, Name = r, угол поворота $- 8 \pi / 3$, ось $(3)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}}$
+
+Вариант N 54
+
+$v_1 = (-8)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, $v_2 = (2)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = s, угол поворота $- \pi / 6$, ось $(-8)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 55
+
+$v_1 = (-3)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, Name = t, угол поворота $7 \pi / 4$, ось $(-9)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 56
+
+$v_1 = (9)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, $v_2 = (6)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, Name = u, угол поворота $- \pi / 3$, ось $(7)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}}$
+
+Вариант N 57
+
+$v_1 = (-7)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, $v_2 = (2)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = v, угол поворота $\pi / 3$, ось $(8)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}}$
+
+Вариант N 58
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, $v_2 = (2)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = w, угол поворота $- 2 \pi / 3$, ось $(-2)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}}$
+
+Вариант N 59
+
+$v_1 = (5)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, Name = x, угол поворота $5 \pi / 3$, ось $(9)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}}$
+
+Вариант N 60
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, $v_2 = (-2)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = 0, угол поворота $7 \pi / 8$, ось $(3)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}}$
+
+Вариант N 61
+
+$v_1 = (-3)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (6)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, Name = 1, угол поворота $4 \pi / 3$, ось $(7)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 62
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, Name = 2, угол поворота $5 \pi / 8$, ось $(4)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 63
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, $v_2 = (8)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, Name = 3, угол поворота $- 3 \pi / 2$, ось $(6)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}}$
+
+Вариант N 64
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, $v_2 = (8)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, Name = 4, угол поворота $- 2 \pi / 3$, ось $(-5)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 65
+
+$v_1 = (9)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (-4)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = 5, угол поворота $- \pi / 3$, ось $(7)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 66
+
+$v_1 = (2)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (8)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = 6, угол поворота $- \pi / 3$, ось $(5)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 67
+
+$v_1 = (9)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, Name = 7, угол поворота $- \pi / 3$, ось $(4)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}}$
+
+Вариант N 68
+
+$v_1 = (5)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, Name = 8, угол поворота $- \pi / 3$, ось $(7)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 69
+
+$v_1 = (-9)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (-6)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = 9, угол поворота $- 2 \pi / 3$, ось $(-2)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}}$
+
+Вариант N 70
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (-2)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = a, угол поворота $3 \pi / 2$, ось $(-6)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 71
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, Name = b, угол поворота $7 \pi / 2$, ось $(6)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}}$
+
+Вариант N 72
+
+$v_1 = (-7)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, $v_2 = (3)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, Name = c, угол поворота $- \pi / 2$, ось $(2)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}}$
+
+Вариант N 73
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (-6)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, Name = d, угол поворота $- 3 \pi / 8$, ось $(8)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 74
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, $v_2 = (6)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, Name = e, угол поворота $- \pi / 3$, ось $(-6)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 75
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, Name = f, угол поворота $3 \pi / 4$, ось $(2)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}}$
+
+Вариант N 76
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, $v_2 = (3)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, Name = g, угол поворота $- 5 \pi / 6$, ось $(8)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}}$
+
+Вариант N 77
+
+$v_1 = (4)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, $v_2 = (-3)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, Name = h, угол поворота $\pi / 3$, ось $(5)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}}$
+
+Вариант N 78
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, Name = m, угол поворота $- \pi / 3$, ось $(7)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 79
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, Name = n, угол поворота $\pi / 4$, ось $(8)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}}$
+
+Вариант N 80
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, $v_2 = (9)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = o, угол поворота $- \pi / 2$, ось $(-8)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 81
+
+$v_1 = (-3)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, $v_2 = (2)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = p, угол поворота $\pi / 3$, ось $(-7)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}}$
+
+Вариант N 82
+
+$v_1 = (-3)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (-6)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = q, угол поворота $\pi / 3$, ось $(-2)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}}$
+
+Вариант N 83
+
+$v_1 = (-7)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, Name = r, угол поворота $- \pi / 6$, ось $(2)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 84
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (6)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, Name = s, угол поворота $- 5 \pi / 3$, ось $(9)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 85
+
+$v_1 = (2)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = t, угол поворота $3 \pi / 4$, ось $(-9)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 86
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, $v_2 = (8)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, Name = u, угол поворота $- \pi / 3$, ось $(9)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}}$
+
+Вариант N 87
+
+$v_1 = (-9)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = v, угол поворота $- 4 \pi / 3$, ось $(3)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}}$
+
+Вариант N 88
+
+$v_1 = (-7)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, $v_2 = (3)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, Name = w, угол поворота $- \pi / 4$, ось $(5)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}}$
+
+Вариант N 89
+
+$v_1 = (-8)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, Name = x, угол поворота $- 5 \pi / 2$, ось $(-2)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}}$
+
+Вариант N 90
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, $v_2 = (-9)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = 0, угол поворота $\pi / 6$, ось $(-5)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}}$
+
+Вариант N 91
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, $v_2 = (-6)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, Name = 1, угол поворота $2 \pi / 3$, ось $(6)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}}$
+
+Вариант N 92
+
+$v_1 = (5)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, Name = 2, угол поворота $- 8 \pi / 3$, ось $(-6)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}}$
+
+Вариант N 93
+
+$v_1 = (-7)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, Name = 3, угол поворота $\pi / 3$, ось $(9)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}}$
+
+Вариант N 94
+
+$v_1 = (7)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (-2)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, Name = 4, угол поворота $- 5 \pi / 4$, ось $(-9)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}}$
+
+Вариант N 95
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, Name = 5, угол поворота $- \pi / 3$, ось $(5)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 96
+
+$v_1 = (-3)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (3)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = 6, угол поворота $7 \pi / 3$, ось $(9)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}}$
+
+Вариант N 97
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, $v_2 = (-7)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = 7, угол поворота $- 2 \pi / 3$, ось $(2)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}}$
+
+Вариант N 98
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, Name = 8, угол поворота $3 \pi / 2$, ось $(-5)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}}$
+
+Вариант N 99
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, Name = 9, угол поворота $- 4 \pi / 3$, ось $(-2)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 100
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, Name = a, угол поворота $\pi / 6$, ось $(6)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}}$
+
+Вариант N 101
+
+$v_1 = (4)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, $v_2 = (9)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, Name = b, угол поворота $\pi / 6$, ось $(5)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 102
+
+$v_1 = (-8)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, $v_2 = (6)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = c, угол поворота $- 5 \pi / 4$, ось $(-3)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}}$
+
+Вариант N 103
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, Name = d, угол поворота $- 5 \pi / 3$, ось $(7)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 104
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, $v_2 = (8)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, Name = e, угол поворота $2 \pi / 3$, ось $(7)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 105
+
+$v_1 = (-9)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (9)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, Name = f, угол поворота $- 7 \pi / 4$, ось $(-2)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 106
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, $v_2 = (-7)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = g, угол поворота $- \pi / 3$, ось $(-2)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 107
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, Name = h, угол поворота $- \pi / 3$, ось $(-9)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}}$
+
+Вариант N 108
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, Name = m, угол поворота $- \pi / 2$, ось $(7)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}}$
+
+Вариант N 109
+
+$v_1 = (2)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = n, угол поворота $\pi / 2$, ось $(9)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 110
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, Name = o, угол поворота $3 \pi / 2$, ось $(3)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}}$
+
+Вариант N 111
+
+$v_1 = (-8)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (-3)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = p, угол поворота $- 7 \pi / 8$, ось $(-3)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}}$
+
+Вариант N 112
+
+$v_1 = (-3)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (-3)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, Name = q, угол поворота $\pi / 4$, ось $(5)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}}$
+
+Вариант N 113
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, $v_2 = (-3)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = r, угол поворота $- \pi / 2$, ось $(8)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}}$
+
+Вариант N 114
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, $v_2 = (-2)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = s, угол поворота $5 \pi / 6$, ось $(6)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 115
+
+$v_1 = (4)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (6)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = t, угол поворота $- \pi / 6$, ось $(-9)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}}$
+
+Вариант N 116
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, $v_2 = (-8)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = u, угол поворота $- 7 \pi / 6$, ось $(-6)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}}$
+
+Вариант N 117
+
+$v_1 = (7)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, $v_2 = (3)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = v, угол поворота $- \pi / 4$, ось $(-3)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}}$
+
+Вариант N 118
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = w, угол поворота $\pi / 3$, ось $(6)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 119
+
+$v_1 = (-7)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, Name = x, угол поворота $\pi / 3$, ось $(9)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}}$
+
+Вариант N 120
+
+$v_1 = (-2)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = 0, угол поворота $- \pi / 2$, ось $(9)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 121
+
+$v_1 = (7)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (2)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, Name = 1, угол поворота $- 5 \pi / 3$, ось $(6)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}}$
+
+Вариант N 122
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, $v_2 = (3)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, Name = 2, угол поворота $2 \pi / 3$, ось $(2)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}}$
+
+Вариант N 123
+
+$v_1 = (7)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = 3, угол поворота $\pi / 3$, ось $(8)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 124
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, Name = 4, угол поворота $- \pi / 3$, ось $(5)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}}$
+
+Вариант N 125
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, Name = 5, угол поворота $- \pi / 2$, ось $(-8)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}}$
+
+Вариант N 126
+
+$v_1 = (9)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (8)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, Name = 6, угол поворота $- \pi / 3$, ось $(8)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}}$
+
+Вариант N 127
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (8)\mathbf{\hat{j}_{}} + (-3)\mathbf{\hat{k}_{}}$, $v_2 = (-6)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, Name = 7, угол поворота $\pi / 4$, ось $(8)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}}$
+
+Вариант N 128
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (2)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, Name = 8, угол поворота $- 7 \pi / 6$, ось $(-6)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}}$
+
+Вариант N 129
+
+$v_1 = (7)\mathbf{\hat{i}_{}} + (-8)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (4)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, Name = 9, угол поворота $4 \pi / 3$, ось $(3)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}}$
+
+Вариант N 130
+
+$v_1 = (3)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (-6)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = a, угол поворота $\pi / 3$, ось $(-8)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}}$
+
+Вариант N 131
+
+$v_1 = (-9)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (-8)\mathbf{\hat{k}_{}}$, $v_2 = (-6)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, Name = b, угол поворота $5 \pi / 8$, ось $(-5)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}}$
+
+Вариант N 132
+
+$v_1 = (5)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (-9)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, Name = c, угол поворота $- \pi / 6$, ось $(8)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 133
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, $v_2 = (3)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, Name = d, угол поворота $8 \pi / 3$, ось $(4)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}}$
+
+Вариант N 134
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (8)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, Name = e, угол поворота $5 \pi / 8$, ось $(-9)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 135
+
+$v_1 = (9)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = f, угол поворота $- 4 \pi / 3$, ось $(2)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 136
+
+$v_1 = (-9)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, $v_2 = (-7)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, Name = g, угол поворота $5 \pi / 4$, ось $(6)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}}$
+
+Вариант N 137
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (-7)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, Name = h, угол поворота $- \pi / 3$, ось $(5)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 138
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (-9)\mathbf{\hat{k}_{}}$, $v_2 = (5)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = m, угол поворота $- \pi / 3$, ось $(3)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 139
+
+$v_1 = (4)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (7)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = n, угол поворота $\pi / 3$, ось $(-4)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}}$
+
+Вариант N 140
+
+$v_1 = (7)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (-3)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = o, угол поворота $- 7 \pi / 6$, ось $(2)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 141
+
+$v_1 = (-5)\mathbf{\hat{i}_{}} + (4)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, $v_2 = (-9)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, Name = p, угол поворота $- 5 \pi / 8$, ось $(-2)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 142
+
+$v_1 = (9)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (4)\mathbf{\hat{k}_{}}$, $v_2 = (-4)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, Name = q, угол поворота $- \pi / 3$, ось $(-2)\mathbf{\hat{i}_{}} + (-7)\mathbf{\hat{j}_{}}$
+
+Вариант N 143
+
+$v_1 = (7)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (6)\mathbf{\hat{k}_{}}$, $v_2 = (7)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}} + (-2)\mathbf{\hat{k}_{}}$, Name = r, угол поворота $\pi / 8$, ось $(4)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}}$
+
+Вариант N 144
+
+$v_1 = (-6)\mathbf{\hat{i}_{}} + (3)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, $v_2 = (2)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (8)\mathbf{\hat{k}_{}}$, Name = s, угол поворота $- \pi / 8$, ось $(8)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}}$
+
+Вариант N 145
+
+$v_1 = (-9)\mathbf{\hat{i}_{}} + (7)\mathbf{\hat{j}_{}} + (9)\mathbf{\hat{k}_{}}$, $v_2 = (3)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (2)\mathbf{\hat{k}_{}}$, Name = t, угол поворота $\pi / 3$, ось $(6)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}}$
+
+Вариант N 146
+
+$v_1 = (6)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, $v_2 = (6)\mathbf{\hat{i}_{}} + (6)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, Name = u, угол поворота $- \pi / 3$, ось $(-8)\mathbf{\hat{i}_{}} + (-9)\mathbf{\hat{j}_{}}$
+
+Вариант N 147
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (2)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, $v_2 = (6)\mathbf{\hat{i}_{}} + (9)\mathbf{\hat{j}_{}} + (3)\mathbf{\hat{k}_{}}$, Name = v, угол поворота $\pi / 4$, ось $(5)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}}$
+
+Вариант N 148
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (-6)\mathbf{\hat{j}_{}} + (-5)\mathbf{\hat{k}_{}}$, $v_2 = (6)\mathbf{\hat{i}_{}} + (-2)\mathbf{\hat{j}_{}} + (5)\mathbf{\hat{k}_{}}$, Name = w, угол поворота $\pi / 3$, ось $(5)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}}$
+
+Вариант N 149
+
+$v_1 = (8)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (-4)\mathbf{\hat{k}_{}}$, $v_2 = (2)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-6)\mathbf{\hat{k}_{}}$, Name = x, угол поворота $- 2 \pi / 3$, ось $(8)\mathbf{\hat{i}_{}} + (-5)\mathbf{\hat{j}_{}}$
+
+Вариант N 150
+
+$v_1 = (-4)\mathbf{\hat{i}_{}} + (5)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, $v_2 = (-4)\mathbf{\hat{i}_{}} + (-3)\mathbf{\hat{j}_{}} + (-7)\mathbf{\hat{k}_{}}$, Name = 0, угол поворота $\pi / 2$, ось $(3)\mathbf{\hat{i}_{}} + (-4)\mathbf{\hat{j}_{}}$
+
+\end{document}
